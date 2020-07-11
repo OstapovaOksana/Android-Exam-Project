@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetGPS">
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:text="Назад"
+        android:onClick="GoBack">
+
+    </Button>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:id="@+id/btnGet"
+        android:text="Отримати координати">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/btnOnMap"
+        android:layout_width="150dp"
+        android:layout_below="@+id/btnGet"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:onClick="OnMap"
+        android:text="Показати на карті">
+
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btnOnMap"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black">
+
+    </TextView>
+</RelativeLayout>

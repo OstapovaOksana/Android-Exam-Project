@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:gravity="center"
+        android:text="Остапова Оксана Миколаївна"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Факультет комп'ютерних наук та кібернетики"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_below="@+id/textView1"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="3 курс"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_below="@+id/textView2"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Група ТТП-3"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_below="@+id/textView3"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Назад"
+        android:onClick="GoBack"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/photo"
+        android:layout_below="@+id/textView4"/>
+
+
+</RelativeLayout>
